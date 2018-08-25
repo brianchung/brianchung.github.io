@@ -72,13 +72,36 @@
     }
   });
 
-  $('.carousel').carousel()
-
   //package
   $('.package-box').on('mouseover', function(){
     $(this).addClass('active')
   }).on('mouseout mouseleave', function(){
     $(this).removeClass('active')
   });
+
+  $(document).ready(function() {
+    var windowsize = $(window).width();
+    toggleAccodion(windowsize);
+  });
+  
+  $(window).on('resize', function() {
+    var windowsize = $(this).width();
+    toggleAccodion(windowsize);
+  });
+
+  // set default accodion close in mobile
+  function toggleAccodion(windowsize) {
+    var $accordionBtn = $('.page-footer a[data-toggle="collapse"]');
+    if (windowsize < 768) {
+      $accordionBtn.each(function(){
+        $(this).next('.footer-accodion-inner').addClass('collapse');
+      });
+    }
+    else {
+      $accordionBtn.each(function(){
+        $(this).next('.footer-accodion-inner').removeClass('collapse');
+      });
+    }
+  }
 
 })(jQuery); // End of use strict

@@ -81,7 +81,7 @@
           
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item active d-none d-md-block">
                   <a class="nav-link" href="#"><span class="header-home-icon"></span></a>
                 </li>
                 <li class="nav-item">
@@ -106,21 +106,21 @@
                               <a class="nav-link" href="#">Contact Us</a>
                             </li>
 
-                <!--<li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
-                </li>-->
-
+                            <li class="d-md-none d-lg-none d-xl-none">
+                                <div class="header-shortcut-mobile">
+                                    <ul>
+                                      <li>
+                                        <a href="#">Blogs</a>
+                                        <a href="#">Client Portal</a>
+                                        <a href="#">South West</a>
+                                        <a href="#">Build Process</a>
+                                        <a href="#">Enquire online</a>
+                                      </li>
+                                    </ul>
+                        
+                                                                       
+                                  </div>
+                            </li>
 
               </ul>
             </div>
@@ -448,14 +448,12 @@
 
       <!-- Grid row 1 -->
       <div class="row">
-
-
-        <a class="text-uppercase green-text text-center d-md-none d-lg-none d-xl-none" data-toggle="collapse" data-parent="#accordion" href="#contact-panel">
+        <a class="text-uppercase d-md-none d-lg-none d-xl-none collapsed" 
+        data-toggle="collapse" data-parent="#accordion" href="#contact-panel">
           <h6>Contact Us</h6>
         </a>
         <!-- Grid column -->
-        <div class="col-md-2 mt-md-0 mt-3" id="contact-panel">
-
+        <div class="footer-accodion-inner col-md-2 mt-md-0 mt-3" id="contact-panel">
           <!-- Content -->
           <h6 class="text-uppercase green-text d-none d-md-block" >Contact us</h6>
           <p class="footer-perth">
@@ -465,14 +463,25 @@
               Perth WA 6000 <br>
               P: 08 6555 7510  
           </p>
+
+          <p class="footer-southw d-md-none d-lg-none d-xl-none">
+              <b class="text-uppercase green-text">South West</b>
+              <br>
+              <span class="small">(Bunbury to Margaret River)</span><br>
+              Unit 2, 120 Blair Street<br>
+              Bunbury WA 6230<br>
+              P: 08 9760 1902
+          </p>
         </div>
         <!-- Grid column -->
 
-        <!-- Grid column -->
-        <div class="col-md-2 mb-md-0 mb-3">
-
+        <a class="text-uppercase d-md-none d-lg-none d-xl-none collapsed" 
+        data-toggle="collapse" data-parent="#accordion" href="#About">
+            <h6>About </h6>
+          </a>
+          <div class="footer-accodion-inner col-md-2 mt-md-0 mt-3" id="About">
             <p class="footer-about">
-                <b class="text-uppercase green-text">About</b>
+                <b class="text-uppercase green-text d-none d-md-block">About</b>
                 <ul class="list-unstyled">
                     <li>
                       <a href="#!">Who We Are</a>
@@ -486,59 +495,63 @@
                   </ul>
             </p>
           </div>
-          <!-- Grid column -->
 
-          <!-- Grid column -->
-          <div class="col-md-2 mb-md-0 mb-3">
-              <p class="footer-planning">
-                  <b class="text-uppercase green-text">Property Plannning</b>
-                  <ul class="list-unstyled">
+          <a class="text-uppercase d-md-none d-lg-none d-xl-none collapsed" 
+        data-toggle="collapse" data-parent="#accordion" href="#Plannning">
+            <h6>Plannning </h6>
+          </a>  
+          <div class="footer-accodion-inner col-md-2 mt-md-0 mt-3" id="Plannning">
+            <!-- Content -->
+            <b class="text-uppercase green-text d-none d-md-block" >Property Plannning </b>
+            <ul class="list-unstyled">
                       
-                    </ul>
-              </p>
+              </ul>
           </div>
-          <!-- Grid column -->
 
-          <!-- Grid column -->
-          <div class="col-md-2 mb-md-0 mb-3">
-              <p class="footer-value">
-                  <b class="text-uppercase green-text">Unlock Potential Value</b>
-                  <ul class="list-unstyled">
-                      <li>
-                          <a href="#!">Rear Home </a>
-                        </li>
-                        <li>
-                          <a href="#!">Duplex or Triplex</a>
-                        </li>
-                        <li>
-                          <a href="#!">Multiple Units</a>
-                        </li>
-                    </ul>
-              </p>
-            </div>
-            <!-- Grid column -->
+          <a class="text-uppercase d-md-none d-lg-none d-xl-none collapsed" 
+        data-toggle="collapse" data-parent="#accordion" href="#Value">
+            <h6>Unlock Potential Value </h6>
+          </a>
+          <div class="footer-accodion-inner col-md-2 mt-md-0 mt-3" id="Value">
+            <!-- Content -->
+            <b class="text-uppercase green-text d-none d-md-block" >Unlock Potential Value </b>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#!">Rear Home </a>
+                  </li>
+                  <li>
+                    <a href="#!">Duplex or Triplex</a>
+                  </li>
+                  <li>
+                    <a href="#!">Multiple Units</a>
+                  </li>
+              </ul>
+          </div>
 
-            <!-- Grid column -->
-          <div class="col-md-2 mb-md-0 mb-3">
-              <p class="footer-finance">
-                  <b class="text-uppercase green-text">Finance & Investment</b>
-                  <ul class="list-unstyled">
+          <a class="text-uppercase d-md-none d-lg-none d-xl-none collapsed" 
+        data-toggle="collapse" data-parent="#accordion" href="#Investment">
+            <h6>Finance & Investment </h6>
+          </a>
+  
+          <div class="footer-accodion-inner col-md-2 mt-md-0 mt-3" id="Investment">
+            <!-- Content -->
+            <b class="text-uppercase green-text d-none d-md-block" >Finance & Investment </b>
+            <ul class="list-unstyled">
                       
-                    </ul>
-              </p>
-            </div>
-            <!-- Grid column -->
-            <!-- Grid column -->
-          <div class="col-md-2 mb-md-0 mb-3">
-              <p class="footer-land">
-                  <b class="text-uppercase green-text">House & Land</b>
-                  <ul class="list-unstyled">
-                      
-                    </ul>
-              </p>
-            </div>
-            <!-- Grid column -->
-          
+              </ul>
+          </div>
+
+
+   
+          <a class="text-uppercase d-md-none d-lg-none d-xl-none collapsed" 
+        data-toggle="collapse" data-parent="#accordion" href="#House">
+            <h6>House & Land </h6>
+          </a>
+          <div class="footer-accodion-inner col-md-2 mt-md-0 mt-3" id="House">
+            <!-- Content -->
+            <b class="text-uppercase green-text d-none d-md-block" >House & Land </b>
+            
+          </div>
       </div>
       <!-- Grid row 1-->
 
@@ -546,8 +559,7 @@
       <div class="row">
 
           <!-- Grid column -->
-          <div class="col-md-2 mt-md-0 mt-3">
-  
+          <div class="col-md-2 mt-md-0 mt-3 d-none d-md-block">
             <!-- Content -->
             <p class="footer-southw">
                 <b class="text-uppercase green-text">South West</b>
@@ -556,48 +568,47 @@
                 Unit 2, 120 Blair Street<br>
                 Bunbury WA 6230<br>
                 P: 08 9760 1902
-            </p>
-  
+            </p> 
           </div>
           <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-2 mb-md-0 mb-3">
-  
-              <p class="footer-design">
-                  <b class="text-uppercase green-text">Home Designs</b>
-                  <ul class="list-unstyled">
-                      
-                    </ul>
-              </p>
-            </div>
-            <!-- Grid column -->
-  
-            <!-- Grid column -->
-            <div class="col-md-2 mb-md-0 mb-3">
 
-                <p class="footer-blog">
-                    <b class="text-uppercase green-text">Blog</b>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Blog Detail Pages</a>                         
-                        </li>
-                      </ul>
-                </p>
-                
-            </div>
-            <!-- Grid column -->
-  
-            <!-- Grid column -->
-            <div class="col-md-2 mb-md-0 mb-3">
-                <p class="footer-contact">
-                    <b class="text-uppercase green-text">Contact Us</b>
-                    <ul class="list-unstyled">
+          <a class="text-uppercase d-md-none d-lg-none d-xl-none collapsed" 
+        data-toggle="collapse" data-parent="#accordion" href="#Designs">
+            <h6>Home Designs </h6>
+          </a>
+          <div class="footer-accodion-inner col-md-2 mt-md-0 mt-3" id="Designs">
+            <!-- Content -->
+            <b class="text-uppercase green-text d-none d-md-block" >Home Designs </b>
+            <ul class="list-unstyled">
+                      
+              </ul>
+          </div>
+
+          <a class="text-uppercase d-md-none d-lg-none d-xl-none collapsed" 
+        data-toggle="collapse" data-parent="#accordion" href="#Blog">
+            <h6>Blog </h6>
+          </a>
+          <div class="footer-accodion-inner col-md-2 mt-md-0 mt-3" id="Blog">
+            <!-- Content -->
+            <b class="text-uppercase green-text d-none d-md-block" >Blog </b>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#!">Blog Detail Pages</a>                         
+                </li>
+              </ul>
+          </div>
+
+          <a class="text-uppercase d-md-none d-lg-none d-xl-none collapsed" 
+        data-toggle="collapse" data-parent="#accordion" href="#Contact">
+            <h6>Contact Us </h6>
+          </a>
+          <div class="footer-accodion-inner col-md-2 mt-md-0 mt-3" id="Contact">
+            <!-- Content -->
+            <b class="text-uppercase green-text d-none d-md-block" >Contact Us </b>
+            <ul class="list-unstyled">
                         
-                      </ul>
-                </p>
-              </div>
-              <!-- Grid column -->
+              </ul>
+          </div>
 
         </div>
         <!-- Grid row 2 -->
