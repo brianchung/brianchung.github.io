@@ -321,7 +321,6 @@ header.masthead p {
 
 
 /*custom styles*/
-
 a{
   color: #fff;
 }
@@ -329,7 +328,6 @@ a:hover{
   color: #fff;
   text-decoration-color: #c1c933;
 }
-
 section {
   position: relative;
 }
@@ -350,7 +348,6 @@ section {
     margin: auto;
     margin-left: 50%;
 }
-
 .green-text {
   color: #c1c933;
 }
@@ -360,13 +357,14 @@ section {
 .green-bg {
   background-color: #c1c933;
 }
-
-
+.white-text{
+  color: #fff;
+  text-shadow: 0px 1px 15px rgba(150, 150, 150, 1);
+}
 section.slant-white {
   position: relative;
   overflow: hidden;
 }
-
 section.slant-white:after {
   content: '';
     position: absolute;
@@ -382,13 +380,10 @@ section.slant-white:after {
     -ms-transform: skew(-86deg);
     transform: skew(-86deg);
 }
-
-
 section.slant-gray {
   position: relative;
   overflow: hidden;
 }
-
 section.slant-gray:after {
   content: '';
     position: absolute;
@@ -404,7 +399,6 @@ section.slant-gray:after {
     -ms-transform: skew(-86deg);
     transform: skew(-86deg);   
 }
-
 .carousel-control-next, 
 .carousel-control-prev {
   position: absolute;
@@ -421,25 +415,36 @@ section.slant-gray:after {
   text-align: center;
   opacity: .5;
 }
-
-.carousel-control-next .next,
-.carousel-control-prev .prev{
+.carousel-control-next .next-green,
+.carousel-control-prev .prev-green,
+.carousel-control-next .next-white,
+.carousel-control-prev .prev-white{
   background-repeat: no-repeat;
-  border: 1px solid #c1c933;
   border-radius: 50%;
   background-position: center; 
   width: 40px;
   height: 40px;
 }
-
-.carousel-control-next .next{
+.carousel-control-next .next-green,
+.carousel-control-prev .prev-green{
+  border: 1px solid #c1c933;
+}
+.carousel-control-next .next-white,
+.carousel-control-prev .prev-white{
+  border: 1px solid #fff;
+}
+.carousel-control-next .next-green{
   background-image: url("../img/right.png");
 }
-
-.carousel-control-prev .prev{
+.carousel-control-prev .prev-green{
   background-image: url("../img/left.png");
 }
-
+.carousel-control-next .next-white{
+  background-image: url("../img/next-w.png");
+}
+.carousel-control-prev .prev-white{
+  background-image: url("../img/prev-w.png");
+}
 .carousel-control-next:focus, 
 .carousel-control-next:hover, 
 .carousel-control-prev:focus, 
@@ -460,7 +465,46 @@ section.slant-gray:after {
   background-color: #dedede;
 }
 
-
+/*home carousel*/
+.home-carousel{
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: relative;
+  color: #fff;
+}
+.home-carousel-1{
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: relative;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+.home-carousel-2{
+  background-image: url("../img/header.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: relative;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+.home-carousel-text {
+  position: absolute;
+    right: 10%;
+    top: 50px;
+}
+.btn-carousel-about {
+  background-color: #c1c933;
+  border-color: #c1c933;
+  color: #fff;
+  font-size: 12px;
+  -webkit-box-shadow: 0px 9px 25px 2px rgba(0,0,0,0.12);
+  -moz-box-shadow: 0px 9px 25px 2px rgba(0,0,0,0.12);
+  box-shadow: 0px 9px 25px 2px rgba(0,0,0,0.12);
+}
 
 /*package*/
 .package-box {
@@ -483,17 +527,15 @@ section.slant-gray:after {
   background-image: url("../img/leeder.png");
 }
 .bayliner{
-  background-image: url("../img/bayliner.png");
+  background-image: url("../img/Bayliner.png");
 }
 .trophy{
   background-image: url("../img/trophy.png");
 }
-
 .package-bar {
   position: relative;
   margin: 0;
 }
-
 .btn-package {
   background-color: #c1c933;
   border-color: #c1c933;
@@ -501,7 +543,6 @@ section.slant-gray:after {
   font-size: 12px;
   display: none;
 }
-
 .btn-package:hover, .btn-package:focus, .btn-package:active {
   background-color: #c1c933 !important;
   color: #fff;
@@ -535,7 +576,6 @@ section.slant-gray:after {
   color: #fff;
   padding: 3rem;
 }
-
 .benefit-circle{
   width: 50px;
   height: 50px;
@@ -660,7 +700,6 @@ section.slant-gray:after {
   width: 12rem;
 }
 
-
 /*footer*/
 footer {
   position: relative;
@@ -705,7 +744,6 @@ footer {
 .footer-perth b {
   margin-bottom: 10px;
 }
-
 
 @media (min-width: 768px) {
   /*common*/
