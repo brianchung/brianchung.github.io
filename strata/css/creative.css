@@ -478,6 +478,7 @@ header{
 #mainNav .navbar-nav > li.nav-item > a.nav-link, 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
   color: #323230;
+  font-size: 12px;
 }
 .header-logo-bg {
   height: 5rem;
@@ -528,7 +529,14 @@ header{
 .header-shortcut ul a:last-child {
   border: none;
 }
-
+.header-home-icon {
+  background-image: url(../img/home-icon.png);
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
 
 
 /*home carousel*/
@@ -619,15 +627,23 @@ header{
 .package-box-inner {
   position: absolute;
   bottom: 0;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 .package-box.active .package-box-inner {
   position: relative;
   text-align: center;
+  top: 3em;
 }
 .package-box.active .btn-package {
   display: block;
 }
+.package-box.active .package-bar {
+  left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #fff;
+}
+
+
 
 /*benefit*/
 .benefit-container{
