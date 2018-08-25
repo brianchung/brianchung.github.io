@@ -550,7 +550,7 @@ header{
   display: inline-flex;
   position: relative;
   margin-left: 28%;
-  top: 42%;
+  top: 35px;
 }
 .header-contact a {
   color:#8a8a8a;
@@ -926,7 +926,7 @@ footer {
     display: none;
   }
   .header-logo-bg {
-    width: 85%;
+    width: 80%;
   }
   .header-logo {
     left: 5%;
