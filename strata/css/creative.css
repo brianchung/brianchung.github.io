@@ -331,9 +331,6 @@ a:hover{
 section {
   position: relative;
 }
-.head-section{
-  margin-top: 150px;
-}
 .bg-gray {
   background-color: #f0f0f0;
 }
@@ -465,7 +462,79 @@ section.slant-gray:after {
   background-color: #dedede;
 }
 
+
+/*header*/
+header{
+  height: 8.5rem;
+}
+.header-logo-container {
+  height: 5rem;
+  background-color: #fff;
+}
+#mainNav {
+  background-color: #c1c933;
+  height: 40px;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link, 
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+  color: #323230;
+}
+.header-logo-bg {
+  height: 5rem;
+  background:#323230;
+  color:#fff;
+  position:relative;
+  width:200px;
+  text-align:center;
+  line-height:40px;
+}
+.header-logo-bg:after{
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  left: 100%;
+  top: 0;
+  border: 40px solid transparent;
+  border-left: 30px solid #323230;
+}
+.header-logo {
+  background-image: url(../img/logo.png);
+    height: 60px;
+    background-size: auto 60px;
+    width: 140px;
+    background-repeat: no-repeat;
+    top: 12%;
+    position: relative;
+    left: 15%;
+}
+.header-shortcut {
+  position: absolute;
+    right: 4rem;
+    top: 0;
+    background-color: #eaeaea;
+    border-radius: 300px;
+}
+.header-shortcut ul {
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+}
+.header-shortcut ul a {
+  color: #868686;
+  padding: 10px;
+  border-right: 1px solid #d0d0d0;
+}
+.header-shortcut ul a:last-child {
+  border: none;
+}
+
+
+
 /*home carousel*/
+.head-section{
+  margin-top: 1.5rem;
+}
 .home-carousel{
   height: 400px;
   background-repeat: no-repeat;
