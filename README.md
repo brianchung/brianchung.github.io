@@ -3,4 +3,4 @@ brian's github
 
 Projects
 
-Stratawise - https://brianchung.github.io/strata/index.html
+Stratawise - <a href="https://brianchung.github.io/strata/index.html" rel="nofollow">https://brianchung.github.io/strata/index.html</a>
