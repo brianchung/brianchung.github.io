@@ -479,6 +479,7 @@ header{
   padding-bottom: 4px;
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link, 
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover, 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
   color: #323230;
   font-size: 12px;
@@ -491,6 +492,7 @@ header{
   width:200px;
   text-align:center;
   line-height:40px;
+  position: absolute;
 }
 .header-logo-bg:after{
   content: "";
@@ -543,6 +545,32 @@ header{
 }
 .nav-item.active {
   border-top: 2px solid #fff;
+}
+.header-contact {
+  display: inline-flex;
+  position: relative;
+  margin-left: 28%;
+  top: 42%;
+}
+.header-contact a {
+  color:#8a8a8a;
+}
+.header-perth {
+  margin-right: 24px;
+  width: 155px;
+}
+.header-bunbury {
+  width: 350px;
+}
+.header-phone {
+  background: url(../img/phone.png);
+    width: 30px;
+    height: 30px;
+    display: block;
+    float: left;
+    top: 6px;
+    position: relative;
+    margin-right: 10px;
 }
 
 
@@ -668,7 +696,7 @@ header{
 .benefit-right {
   background-color: #323230;
   color: #fff;
-  padding: 3rem;
+  padding: 2rem;
 }
 .benefit-circle{
   width: 50px;
@@ -739,13 +767,13 @@ header{
 .potential-left {
   background-color: #323230;
   color: #fff;
-  padding: 3rem;
+  padding: 2rem;
 }
 .potential-right {
   background-image: url("../img/potential.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  /*background-size: 100% auto;*/
 }
 .potential-text {
   margin-left: 70px;
@@ -843,18 +871,66 @@ footer {
   margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-  /*common*/
-  /*.bar {
-    width: 100%;
-    margin: 0;
-  }*/
-  
-  /*benefit*/
-  /*.benefit-left {
-    height: 178px;
-  }*/
 
+@media (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar-collapse.collapse.show {
+    width: 100%;
+    background-color: rgb(193, 201, 51);
+    position: relative;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .navbar-collapse.collapse.show .nav-item {
+    border-bottom: 1px solid #fff;
+  }
+  .navbar-collapse.collapse.show .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .potential-right,
+  .benefit-left {
+    background-size: auto 100% ; 
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .navbar-toggler.pull-right.navbar-toggler-right {
+    width: 80px;
+    height: 80px;
+    background: url(../img/hambuger.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .carousel {
+    width: 98%;
+  }
+  
+  .header-contact {
+    z-index: 1;
+    top: 5rem;
+    margin: 0;
+    padding: 3px 3px 3px 10%;
+  }
+  .header-contact .green-text {
+    color: #212529;
+  }
+  .header-shortcut {
+    display: none;
+  }
+  .header-logo-bg {
+    width: 85%;
+  }
+  .header-logo {
+    left: 5%;
+  }
 
   .package-box.active .package-box-inner {
     top: 7em;
@@ -877,7 +953,8 @@ footer {
   
   .benefit-left,
   .potential-right {
-    height: 256px;
+    min-height: 235px;
+    background-size: 100% auto;
   }
 
 
@@ -897,7 +974,10 @@ footer {
     opacity: 0;
   }
 
-  .carousel-control-next .next-green, .carousel-control-prev .prev-green, .carousel-control-next .next-white, .carousel-control-prev .prev-white {
+  .carousel-control-next .next-green, 
+  .carousel-control-prev .prev-green, 
+  .carousel-control-next .next-white, 
+  .carousel-control-prev .prev-white {
     position: absolute;
     bottom: 16px;
   }

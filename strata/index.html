@@ -31,10 +31,33 @@
   <body id="page-top">
     <header class="fixed-top">
         <div class="header-logo-container">
+
+            <button class="navbar-toggler pull-right navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+
           <div class="header-logo-bg">
             <div class="header-logo"></div>
           </div>
           
+          <div class="header-contact">
+            <div class="header-perth">
+                <span class="header-phone d-none d-md-block "></span>
+                <span class="green-text text-uppercase">
+                    Perth <br> 
+                </span> 
+                <h6><a href="callto:0865557515">08 6555 7515</a></h6>
+            </div>
+            <div class="header-bunbury">
+                <span class="header-phone d-none d-md-block "></span>
+                <span class="green-text text-uppercase">
+                    Bunbury to Margaret river <br> 
+                </span>
+                <h6><a href="callto:0865557514">08 6555 7514</a></h6>
+            </div>
+          </div>
+
           <div class="header-shortcut">
             <ul>
               <li>
@@ -51,12 +74,12 @@
 
         </div>
 
-        <nav class="navbar navbar-expand-lg" id="mainNav">         
+        <nav class="navbar navbar-expand-md" id="mainNav">         
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                   <a class="nav-link" href="#"><span class="header-home-icon"></span></a>
@@ -109,20 +132,20 @@
             <div id="carouselHome" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner home-carousel">
                   <div class="carousel-item  home-carousel-1 white-text active">
-                        <div class="pull-right col-lg-6 home-carousel-text">
+                        <div class="pull-right col-lg-6 col-md-6 home-carousel-text">
                           <h1 class="text-uppercase">
                                 <strong>Property development made easy.</strong>
                           </h1>
-                          <p class="mb-5">Whether you’re developing a quadruplex site or a large multi-site project, you can trust Stratawise to help you get maximum return on your investment, and be financially rewarded for your efforts.</p>
+                          <p class="mb-5 d-none d-md-block">Whether you’re developing a quadruplex site or a large multi-site project, you can trust Stratawise to help you get maximum return on your investment, and be financially rewarded for your efforts.</p>
                           <a class="btn btn-carousel-about btn-xl js-scroll-trigger" href="#about">Find Out More</a>
                         </div>                    
                   </div>
                   <div class="carousel-item home-carousel-2 white-text">
-                        <div class="pull-right col-lg-6 home-carousel-text">
+                        <div class="pull-right col-lg-6 col-md-6 home-carousel-text">
                             <h1 class="text-uppercase">
                                 <strong>Carousel 2.</strong>
                               </h1>
-                          <p class="mb-5">Whether you’re developing a quadruplex site or a large multi-site project, you can trust Stratawise to help you get maximum return on your investment, and be financially rewarded for your efforts.</p>
+                          <p class="mb-5 d-none d-md-block">Whether you’re developing a quadruplex site or a large multi-site project, you can trust Stratawise to help you get maximum return on your investment, and be financially rewarded for your efforts.</p>
                           <a class="btn btn-carousel-about btn-xl js-scroll-trigger" href="#about">Find Out More</a>
                         </div>
                     </div>
@@ -196,10 +219,10 @@
                   <div class="bar green-bg"></div>
               </div>
               <div class="row">
-                  <div class="col-lg-6 col-md-5 text-left benefit-left">
+                  <div class="col-lg-6 col-md-6 text-left benefit-left">
                      
                   </div>
-                  <div class="col-lg-6 col-md-5 benefit-right">
+                  <div class="col-lg-6 col-md-6 benefit-right">
                       <h3 class="mb-3 green-text">Benefit From <br> Our Experience</h3>
                       <p class="mb-0">At Stratawise, we specialise in strata developments. So whether you’re a first time developer, a professional, or expanding your private portfolio – choose Stratawise, and benefit from our experience!</p>
                   </div>
@@ -291,11 +314,11 @@
                       <div class="bar green-bg"></div>
                   </div>
                   <div class="row text-center">
-                      <div class="col-lg-6 col-md-5 text-left potential-left">
+                      <div class="col-lg-6 col-md-6 text-left potential-left">
                             <h3 class="mb-3 green-text">Unlock Your <br> Potential Value</h3>
                             <p class="mb-0">At Stratawise, we specialise in strata developments. So whether you’re a first time developer, a professional, or expanding your private portfolio – choose Stratawise, and benefit from our experience!</p>
                       </div>
-                      <div class="col-lg-6 col-md-5 potential-right">
+                      <div class="col-lg-6 col-md-6 potential-right">
                           
                       </div>
                   </div>
@@ -362,7 +385,7 @@
                         <div class="carousel-inner">
                           <div class="carousel-item active">                        
                             <div class="testimony-inner-container row mx-auto">
-                                <div class="col-md-4">
+                                <div class="col-md-4 d-none d-md-block">
                                     <div class="testimony-user-image">
                                         <img src="img/testimony.png">
                                       </div>
@@ -378,7 +401,7 @@
 
                           <div class="carousel-item">
                               <div class="testimony-inner-container row mx-auto">
-                                  <div class="col-md-4">
+                                  <div class="col-md-4 d-none d-md-block">
                                       <div class="testimony-user-image">
                                           <img src="img/testimony.png">
                                         </div>
@@ -418,16 +441,23 @@
 <footer class="page-footer font-small blue pt-4">
 
     <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left">
+    <div class="container-fluid text-center text-md-left" id="accordion">
+
+
+      
 
       <!-- Grid row 1 -->
       <div class="row">
 
+
+        <a class="text-uppercase green-text text-center d-md-none d-lg-none d-xl-none" data-toggle="collapse" data-parent="#accordion" href="#contact-panel">
+          <h6>Contact Us</h6>
+        </a>
         <!-- Grid column -->
-        <div class="col-md-2 mt-md-0 mt-3">
+        <div class="col-md-2 mt-md-0 mt-3" id="contact-panel">
 
           <!-- Content -->
-          <h6 class="text-uppercase green-text">Contact us</h6>
+          <h6 class="text-uppercase green-text d-none d-md-block" >Contact us</h6>
           <p class="footer-perth">
               <b class="text-uppercase green-text">Head Office</b>
               <br>
@@ -581,14 +611,15 @@
           <a class="footer-btn footer-fb-btn" href="#"></a>
           <a class="footer-btn footer-in-btn" href="#"></a>
         </div>
-
-        Copyright © 2018 Stratawise. Stratawise IS A DIVISION OF BGC RESIDENTIAL BC 9769 <br>
-        <a href="#">Terms & Conditions</a> /
-        <a href="#">Privacy Policy</a> /
-        <a href="#">Disclaimer</a> /
-        <a href="#">Contact Us</a> 
-
         <div class="footer-logo"></div>
+        <div class="footer-copyright-inner">
+            Copyright © 2018 Stratawise. Stratawise IS A DIVISION OF BGC RESIDENTIAL BC 9769 <br>
+            <a href="#">Terms & Conditions</a> /
+            <a href="#">Privacy Policy</a> /
+            <a href="#">Disclaimer</a> /
+            <a href="#">Contact Us</a>     
+        </div>     
+        
     </div>
     <!-- Copyright -->
 
