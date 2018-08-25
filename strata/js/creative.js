@@ -72,6 +72,7 @@
     }
   });
 
+  $('.carousel').carousel()
 
   //package
   $('.package-box').on('mouseover', function(){
